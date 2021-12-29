@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # MongoDB
-cluster = pymongo.MongoClient(os.environ.get("MONGODB"))
+cluster = pymongo.MongoClient(os.environ.get("mongodb+srv://dbmab:eUtbAuei6mpLoinz@cluster0.r2c3m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"))
 db = cluster["wishes"]["wishes"]
 
-bot = telebot.TeleBot(os.environ.get("TOKEN"))
+bot = telebot.TeleBot(os.environ.get("5039587639:AAHpe8fbPkQgeNuHVaQ3jnT-1NOlO1elz9I"))
 
 cache = {}
 default = {
